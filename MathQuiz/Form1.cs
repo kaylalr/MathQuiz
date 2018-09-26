@@ -48,7 +48,7 @@ namespace MathQuiz
                 // Store values in 'subtractEnd1' and 'subtractEnd2'
                 minusEnd1 = randomizer.Next(51);
                 minusEnd2 = randomizer.Next(51);
-            } while (minusEnd1 - minusEnd2 >= 0);
+            } while (minusEnd1 - minusEnd2 < 0);
 
             // This do-while makes sure that the answer won't be greater than 100
             do
@@ -57,7 +57,7 @@ namespace MathQuiz
                 // Store values in 'multEnd1' and 'multEnd2'
                 multEnd1 = randomizer.Next(51);
                 multEnd2 = randomizer.Next(51);
-            } while (multEnd1 * multEnd2 <= 100);
+            } while (multEnd1 * multEnd2 > 100);
             
             // This do-while statement makes sure that the numbers are easily divided with no remainer or decimals
             do
