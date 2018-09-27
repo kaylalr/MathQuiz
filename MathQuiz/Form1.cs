@@ -65,7 +65,7 @@ namespace MathQuiz
                 // Generate two random numbers to divide
                 // Store values in 'divEnd1' and 'divEnd2'
                 divEnd1 = randomizer.Next(51);
-                divEnd2 = randomizer.Next(51);
+                divEnd2 = randomizer.Next(1, 51);
                 // Can't divide by zero, so this changes it to a one
                 if (divEnd2 == 0)
                 {
@@ -116,57 +116,12 @@ namespace MathQuiz
             InitializeComponent();
         }
 
-        private void timeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label11_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
         {
 
         }
@@ -218,6 +173,12 @@ namespace MathQuiz
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
             }
+        }
+
+        private void date_Click(object sender, EventArgs e)
+        {
+            DateTime today = DateTime.Now;
+            date.Text = today.ToString("dd MMMM yyyy");
         }
     }
 }
