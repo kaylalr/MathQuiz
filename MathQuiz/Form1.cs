@@ -161,6 +161,10 @@ namespace MathQuiz
                 sum.Value = addEnd1 + addEnd2;
                 startButton.Enabled = true;
             }
+            if (timeLeft < 10)
+            {
+                timeLabel.BackColor = Color.Red;
+            }
         }
 
         private void answer_Enter(object sender, EventArgs e)
@@ -176,6 +180,12 @@ namespace MathQuiz
         }
 
         private void date_Click(object sender, EventArgs e)
+        {
+            DateTime today = DateTime.Now;
+            date.Text = today.ToString("dd MMMM yyyy");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
             DateTime today = DateTime.Now;
             date.Text = today.ToString("dd MMMM yyyy");
