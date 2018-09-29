@@ -116,17 +116,13 @@ namespace MathQuiz
             InitializeComponent();
         }
 
+        // don't need these, but label doesn't exist anymore so can't delete
         private void label11_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
 
         }

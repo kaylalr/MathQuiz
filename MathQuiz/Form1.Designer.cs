@@ -236,7 +236,6 @@
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(100, 35);
             this.quotient.TabIndex = 5;
-            this.quotient.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             this.quotient.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // label12
@@ -301,9 +300,9 @@
             this.date.AutoSize = true;
             this.date.Location = new System.Drawing.Point(12, 9);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(30, 13);
+            this.date.Size = new System.Drawing.Size(59, 13);
             this.date.TabIndex = 21;
-            this.date.Text = "Date";
+            this.date.Text = "Date Label";
             // 
             // Form1
             // 
